@@ -1,0 +1,21 @@
+{
+  "name": "codeql-pr-gate-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Starter lab repository for building an advanced CodeQL PR gate configuration.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "jest --runInBand"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.1.0"
+  }
+}
