@@ -1,0 +1,22 @@
+name: "CodeQL config feature showcase"
+
+queries:
+  - name: Add the built-in broader suite
+    uses: security-and-quality
+
+
+query-filters:
+  - exclude:
+      tags: /cwe-(377|378)/
+  - exclude:
+      id: js/http-to-file-access
+
+paths:
+  - src
+
+paths-ignore:
+  - tests
+  - storage
+  - '**/*.test.js'
+  - '**/*.md'
+
